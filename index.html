@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Yashar Makhtoumi Data Scientist | Researcher</h1>
-<p>I'm using UW-Madison email.</p>
-</body>
-</html>
-
-
+<head>
 <style>
 :root {
       --button-bg-color: #4CAF50;
       --button-hover-bg-color: #45a049;
       --button-text-color: white;
+}
+
+body {
+      background-image: url('C:/Users/Yashar/OneDrive - UW-Madison/myWebsite/Photos/beach'); /* Replace with your photo path */
+      background-size: cover; /* Cover the entire page */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      font-family: 'Arial', sans-serif; /* Modern font */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+}
+
+h1, p {
+      color: white; /* Ensure text is readable on the background */
+      text-align: center; /* Center the text */
+      padding: 20px; /* Add some padding */
 }
 
 .button {
@@ -27,7 +37,6 @@
       cursor: pointer; /* Add a pointer on hover */
       border-radius: 12px; /* Rounded corners */
       transition: background-color 0.3s ease; /* Smooth transition */
-      font-family: 'Arial', sans-serif; /* Modern font */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
@@ -35,10 +44,16 @@
       background-color: var(--button-hover-bg-color); /* Darker green on hover */
 }
 </style>
+</head>
+<body>
+<h1>Yashar Makhtoumi Data Scientist | Researcher</h1>
+<p>I'm using UW-Madison email.</p>
 
 <a href="./" class="button">Home</a>
 <a href="./projects" class="button">Projects</a>
 <a href="./blog" class="button">Blog</a>
 <a href="./about" class="button">About</a>
 <a href="./contact" class="button">Contact</a>
-<a href="./resume" class="button">Resume</a>    
+<a href="./resume" class="button">Resume</a>
+</body>
+</html>
