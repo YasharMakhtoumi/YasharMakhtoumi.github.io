@@ -27,10 +27,7 @@ header {
 header nav a {
     color: white;
     text-decoration: none;
-    margin: 10px 10px;
-    display: flex;
-    justify-content: space-evenly; /* Adjust spacing between links */
-    align-items: center;
+    margin: 10px 10px;    
 }
 
 header nav a:hover {
@@ -44,8 +41,7 @@ section {
 
 #section1 {
     background: #f4f4f4;
-    background: white; /* Set background to white */
-    color: black; /* Set text color to dark */
+
 }
 
 #section2 {
@@ -56,8 +52,7 @@ section {
 
 #section3 {
     background: #c2c2c2;
-    background: white; /* Set background to white */
-    color: black; /* Set text color to dark */
+ 
 }
 
 /* Footer and Back-to-Top Button */
