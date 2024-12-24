@@ -4,10 +4,6 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    scroll-behavior: smooth;
     background: url('../Photos/agland.jpg');
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the image */
@@ -34,8 +30,7 @@ header nav a {
     margin: 10px 10px;
     display: flex;
     justify-content: space-evenly; /* Adjust spacing between links */
-    align-items: center; /* Align links vertically in the center */
-    flex-wrap: wrap; /* Allow links to wrap onto a new line if needed */
+    align-items: center;
 }
 
 header nav a:hover {
@@ -45,20 +40,24 @@ header nav a:hover {
 section {
     padding: 80px 20px 20px;
     height: 100vh;
-    background: white; /* Set background to white */
-    color: black; /* Set text color to dark */
 }
 
 #section1 {
     background: #f4f4f4;
+    background: white; /* Set background to white */
+    color: black; /* Set text color to dark */
 }
 
 #section2 {
     background: #e2e2e2;
+    background: white; /* Set background to white */
+    color: black; /* Set text color to dark */
 }
 
 #section3 {
     background: #c2c2c2;
+    background: white; /* Set background to white */
+    color: black; /* Set text color to dark */
 }
 
 /* Footer and Back-to-Top Button */
