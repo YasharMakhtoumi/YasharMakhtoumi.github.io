@@ -45,6 +45,8 @@ header nav a:hover {
 section {
     padding: 80px 20px 20px;
     height: 100vh;
+    background: white; /* Set background to white */
+    color: black; /* Set text color to dark */
 }
 
 #section1 {
