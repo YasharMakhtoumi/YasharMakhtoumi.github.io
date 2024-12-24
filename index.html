@@ -1,106 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrolling Webpage</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            scroll-behavior: smooth; /* Enables smooth scrolling */
-        }
+<style>
+:root {
+      --button-bg-color: #4CAF50;
+      --button-hover-bg-color: #45a049;
+      --button-text-color: white;
+}
 
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #333;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            z-index: 1000;
-        }
+body {
+      background-image: url('Photos/agland.jpg'); /* Updated path */
+      background-size: cover; /* Cover the entire page */
+      background-position: bottom; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      font-family: 'Arial', sans-serif; /* Modern font */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+}
 
-        header h1 {
-            margin: 0;
-        }
+h1, p {
+      color: white; /* Ensure text is readable on the background */
+      text-align: center; /* Center the text */
+      padding: 20px; /* Add some padding */
+}
 
-        nav {
-            display: flex;
-            gap: 15px;
-        }
+.button {
+      background-color: var(--button-bg-color); /* Green background */
+      border: none; /* Remove borders */
+      color: var(--button-text-color); /* White text */
+      padding: 10px 20px; /* Some padding */
+      text-align: center; /* Center the text */
+      text-decoration: none; /* Remove underline */
+      display: inline-block; /* Make the links appear side-by-side */
+      font-size: 16px; /* Increase font size */
+      margin: 4px 2px; /* Add some margin */
+      cursor: pointer; /* Add a pointer on hover */
+      border-radius: 12px; /* Rounded corners */
+      transition: background-color 0.3s ease; /* Smooth transition */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 80px 20px 20px; /* Add padding to prevent overlap with the header */
-            height: 100vh; /* Each section takes up 100% of the viewport height */
-        }
-
-        #section1 {
-            background: #f4f4f4;
-        }
-
-        #section2 {
-            background: #e2e2e2;
-        }
-
-        #section3 {
-            background: #c2c2c2;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-        }
-    </style>
+.button:hover {
+      background-color: var(--button-hover-bg-color); /* Darker green on hover */
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Allen Podrey</h1>
-        <nav>
-            <a href="#section1">About</a>
-            <a href="#section2">Projects</a>
-            <a href="#section3">Contact</a>
-        </nav>
-    </header>
+<h1>Yashar Makhtoumi </h1>
+<h1>Data Scientist | Researcher</h1>
+<p>University of Wisconsin - Madison</p>
+<p>I'm using UW-Madison email.</p>
 
-    <section id="section1">
-        <h2>About Me</h2>
-        <p>I am a data scientist and researcher based at the University of Wisconsin - Madison. I specialize in remote sensing and machine learning applications.</p>
-    </section>
-
-    <section id="section2">
-        <h2>Projects</h2>
-        <p>Here are some of my recent projects:</p>
-        <ul>
-            <li>Project 1: Remote sensing for agricultural sustainability</li>
-            <li>Project 2: Machine learning for water quality prediction</li>
-            <li>Project 3: Dynamic field boundary mapping</li>
-        </ul>
-    </section>
-
-    <section id="section3">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via my UW-Madison email: allen.podrey@wisc.edu</p>
-    </section>
-
-    <footer>
-        <p>© 2024 Allen Podrey. All rights reserved.</p>
-    </footer>
+<a href="./" class="button">Home</a>
+<a href="./projects" class="button">Projects</a>
+<a href="./blog" class="button">Blog</a>
+<a href="./about" class="button">About</a>
+<a href="./contact" class="button">Contact</a>
+<a href="./resume" class="button">Resume</a>
 </body>
 </html>
+
+<p>Yashar Makhtoumi is a postdoctoral research associate at the Nelson Institute Center for Sustainability and the Global Environment. 
+    His research focuses on the impacts of land use/land cover change on the hydrologic cycle, water quality, and soil biogeochemistry.
+    Yashar joined the Gibbs Land Use and Environment Lab in January 2023. He works with Dr. Tyler Lark to better understand the connection
+     between agricultural conservation practices and river/lake water quality. He also studies field-level irrigation mapping to improve 
+     our understanding of agricultural water use across the US.
+    Prior to joining the Gibbs Lab, Yashar obtained his Ph.D. in Civil and Environmental Engineering from Florida State University in December 2022.
+     During his Ph.D., he contributed to USDA research on characterizing changes in water balance variables in the hydrologic cycle, 
+     suspended sediment in rivers, soil erosion from agricultural lands, Nitrogen and Phosphorus cycle under warming climate and 
+     land use/land cover changes such as urbanization and farming/grazing.
+    In his free time, he enjoys traveling and anything related to soccer.</p> 
