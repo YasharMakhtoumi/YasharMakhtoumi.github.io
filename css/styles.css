@@ -27,8 +27,8 @@ header {
 header nav a {
     color: white;
     text-decoration: none;
+    display: flex;
     justify-content: space-evenly; /* Adjust spacing between links */
-    padding: 10px 50px;  
 }
 
 header nav a:hover {
