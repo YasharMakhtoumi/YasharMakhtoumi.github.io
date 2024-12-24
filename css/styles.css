@@ -31,7 +31,7 @@ header {
 header nav a {
     color: yellowgreen;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 30px 15px;
 }
 
 header nav a:hover {
