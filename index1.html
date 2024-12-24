@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 80px 20px 20px; /* Add padding to prevent overlap with the header */
+            height: 100vh; /* Each section takes up 100% of the viewport height */
+        }
+
+        #section1 {
+            background: #f4f4f4;
+        }
+
+        #section2 {
+            background: #e2e2e2;
+        }
+
+        #section3 {
+            background: #c2c2c2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Allen Podrey</h1>
+        <nav>
+            <a href="#section1">About</a>
+            <a href="#section2">Projects</a>
+            <a href="#section3">Contact</a>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <h2>About Me</h2>
+        <p>I am a data scientist and researcher based at the University of Wisconsin - Madison. I specialize in remote sensing and machine learning applications.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Projects</h2>
+        <p>Here are some of my recent projects:</p>
+        <ul>
+            <li>Project 1: Remote sensing for agricultural sustainability</li>
+            <li>Project 2: Machine learning for water quality prediction</li>
+            <li>Project 3: Dynamic field boundary mapping</li>
+        </ul>
+    </section>
+
+    <section id="section3">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via my UW-Madison email: allen.podrey@wisc.edu</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Allen Podrey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
