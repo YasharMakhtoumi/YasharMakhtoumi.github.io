@@ -31,7 +31,13 @@ header {
 header nav a {
     color: white;
     text-decoration: none;
-    margin: 30px 15px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-evenly; /* Adjust spacing between links */
+    align-items: center; /* Align links vertically in the center */
+    flex-wrap: wrap; /* Allow links to wrap onto a new line if needed */
+    overflow-x: auto; /* Allows horizontal scrolling for navigation */
+    white-space: nowrap; /* Prevents links from wrapping to a new line */
 }
 
 header nav a:hover {
