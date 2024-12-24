@@ -1,6 +1,9 @@
 // Back-to-Top Button
 const backToTopButton = document.getElementById("backToTop");
 
+// Hide button initially
+backToTopButton.style.display = "none";
+
 // Show button when scrolling down
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
