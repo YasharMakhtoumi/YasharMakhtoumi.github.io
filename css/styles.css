@@ -1,15 +1,29 @@
 /* General Styles */
-body {
+body.Home {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background: url('../Photos/agland.jpg');
+    background: url('../Photos/agland_hills.jpg');
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-repeat: repeat; /* Do not repeat the image */
     background-attachment: fixed; /* Fixed background image */
 }
+
+body.About {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background: url('../Photos/grazing.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fixed background image */
+}
+
+
 
 header {
     position: fixed;
@@ -20,15 +34,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     z-index: 1000;
 }
 
 header nav a {
     color: white;
     text-decoration: none;
-    display: flex;
-    justify-content: space-evenly; /* Adjust spacing between links */
+    margin: 0 15px;
+
 }
 
 header nav a:hover {
@@ -36,8 +50,14 @@ header nav a:hover {
 }
 
 section {
-    padding: 80px 20px 20px;
-    height: 100vh;
+    position: relative;
+    padding: 180px 20px 20px;
+    height: 35vh;
+    z-index: 1; /* Add z-index to keep the sections on top */
+    padding: 30px 20px; /* Inner spacing inside each section */
+    margin:200px 0; /* Adds space between sections */
+    min-height: 10vh; /* Adjust the height of each section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
 }
 
 #section1 {
@@ -46,13 +66,11 @@ section {
 }
 
 #section2 {
-    background: #e2e2e2;
-    background: white; /* Set background to white */
-    color: black; /* Set text color to dark */
+    background: #f4f4f4;
 }
 
 #section3 {
-    background: #c2c2c2;
+    background: #f4f4f4;
  
 }
 
