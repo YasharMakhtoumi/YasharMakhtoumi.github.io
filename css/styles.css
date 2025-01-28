@@ -126,6 +126,17 @@ section {
  
 }
 
+
+.social-icon {
+    width: 50px; /* Set the width of the image */
+    height: 50px; /* Set the height of the image */
+    object-fit: cover; /* Ensure the image fits within the specified dimensions */
+    margin-right: 20px; /* Add some space to the right of each image */
+}
+
+
+
+
 /* Footer and Back-to-Top Button */
 footer {
     text-align: center;
