@@ -4,7 +4,7 @@ body.Home {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background: url('../Photos/agland_hills.jpg');
+    background: url('../Photos/agri_data.jpg');
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the image */
     background-repeat: repeat; /* Do not repeat the image */
@@ -23,26 +23,44 @@ body.About {
     background-attachment: fixed; /* Fixed background image */
 }
 
+body.Projects {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background: url('../Photos/agland.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fixed background image */
+}
 
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #b90c0c;
+    background:  rgba(51, 51, 51, 0.8);c;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
+    padding: 10px 20px;
     z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
 }
 
 header nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-
+    padding: 10px 15px; /* Add padding to the links */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 header nav a:hover {
@@ -52,7 +70,7 @@ header nav a:hover {
 section {
     position: relative;
     padding: 180px 20px 20px;
-    height: 35vh;
+    height: 85vh;
     z-index: 1; /* Add z-index to keep the sections on top */
     padding: 30px 20px; /* Inner spacing inside each section */
     margin:200px 0; /* Adds space between sections */
@@ -61,16 +79,14 @@ section {
 }
 
 #section1 {
-    background: #f4f4f4;
+    background: #ffffff;
 
 }
+
+
 
 #section2 {
-    background: #f4f4f4;
-}
-
-#section3 {
-    background: #f4f4f4;
+    background: #ffffff;
  
 }
 
