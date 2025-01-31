@@ -101,6 +101,7 @@ main {
 
 
 section {
+    text-align: center;
     position: relative;
     padding: 180px 20px 20px;
     height: 85vh;
@@ -156,7 +157,33 @@ section {
     margin: 0 auto; /* Center the figures */
 }
 
+.button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Position Home button in header top-right or bottom-right */
+.button-home {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-home.bottom {
+    top: auto;
+    bottom: 10px;
+}
 
 
 /* Footer and Back-to-Top Button */
