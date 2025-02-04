@@ -153,18 +153,20 @@ header nav a:hover {
     #nav-links {
       display: none;
       flex-direction: column;
-      position: absolute;
-      top: 0px; /* Adjust to match header height */
+      position:fixed;
+      top: 42px; /* Adjust to match header height */
       right: 0;
-      background-color: #333;
-      width: 100%;
+      background-color: rgba(51, 51, 51, 0.8);
+      color: white;;
+      width: 40%;
       text-align: center;
-      padding: 0px 0;
+      padding-top: 60px;  /* Space for the header/hamburger icon */
+      z-index: 2000;   /* Make sure the overlay is above the header */
     }
     
     /* When active, display the navigation links */
     #nav-links.active {
-      display: flex;
+      display:flex;
     }
     
     /* Style each link for vertical stacking */
