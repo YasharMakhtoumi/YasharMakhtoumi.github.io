@@ -71,28 +71,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.getElementById("menu-icon");
-    if (menuIcon) {  // Check if the element was found
-        menuIcon.addEventListener("click", function () {
-            alert("Menu icon clicked!"); // Test alert
-        });
-    } else {
-        console.error("Menu icon not found!"); // Error message if not found
-    }
-
     const navLinks = document.getElementById("nav-links");
-    if (navLinks) {
-      console.log("navLinks found")
-    } else {
-      console.error("navLinks not found!");
+    
+    if (menuIcon) {
+      menuIcon.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
     }
-});
+  });
+  
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const menuIcon = document.getElementById("menu-icon");
+//     if (menuIcon) {  // Check if the element was found
+//         menuIcon.addEventListener("click", function () {
+//             alert("Menu icon clicked!"); // Test alert
+//         });
+//     } else {
+//         console.error("Menu icon not found!"); // Error message if not found
+//     }
+
+//     const navLinks = document.getElementById("nav-links");
+//     if (navLinks) {
+//       console.log("navLinks found")
+//     } else {
+//       console.error("navLinks not found!");
+//     }
+// });
   
 
 

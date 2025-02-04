@@ -98,6 +98,11 @@ header nav a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Optional: Add a background color on hover */
 }
 
+
+
+
+
+
 /* Navigation links styling for larger screens */
 #nav-links {
     display: flex;
@@ -115,7 +120,13 @@ header nav a:hover {
     text-decoration: underline;
     background-color: rgba(255, 255, 255, 0.2);
   }
+
   
+/* Styles when 'active' class is added */
+#nav-links.active {
+    display: flex;
+}
+
 /* Style for the menu icon */
 .menu-icon {
     position: absolute;
@@ -147,10 +158,12 @@ header nav a:hover {
 }
 
 
-/* Styles when 'active' class is added */
-#nav-links.active {
-    display: flex;
-}
+
+
+
+
+
+
 
 
 header img {
