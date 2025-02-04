@@ -28,7 +28,7 @@ body.Projects {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background: url('../Photos/agland.jpg');
+    background: url('../Photos/agri_data.jpg');
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the image */
     background-repeat: repeat; /* Do not repeat the image */
@@ -49,7 +49,17 @@ body.Contact {
     background-attachment: fixed; /* Fixed background image */
 }
 
+/* The wrapper that contains all your content and the footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+/* The main content area should expand to fill the space */
+.main-content {
+    flex: 1;
+}
 
 header {
     position: fixed;
@@ -240,7 +250,7 @@ section {
 
 .content-wrapper {
     max-width: 1000px;
-    min-height: 1000px;
+    min-height: auto;
     margin: 0 auto;
     text-align: center;
 }
@@ -422,40 +432,129 @@ section {
 
 
 
-#gallery-container {
-    width: 100%; /* Full width */
-    height: 500px; /* Fixed height (adjust as needed) */
-    margin: 50px auto;
-    overflow: hidden; /* Hide any image overflow */
+
+
+/* Ensure the whole section covers the full width of the webpage,
+   but limit it to a max-width for better layout control */
+   #content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;           /* Use 100% instead of 100vw */
+    max-width: 1200px;     /* Optional: Set a maximum width */
+    margin: 100px auto 0 auto;  /* Center the section and add top space */
+    padding: 0;
 }
 
+/* Top Row: Profile Section */
+.content-top {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+/* Bottom Row: Two Columns Without Gaps */
+.content-bottom {
+    display: flex;
+    width: 100%;           /* Use 100% for the container */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Left Column: Background and Text */
+.content-left {
+    flex: 1;
+    padding: 30px;
+    background-color: #92afd6; /* Light background for contrast */
+}
+
+/* Right Column: Background and Content */
+.content-right {
+    flex: 1;
+    padding: 30px;
+    background-color: #92afd6; /* Same background color for consistency */
+}
+
+/* Styling for images in the right column */
+.content-right img { 
+    width: 15%;
+    height: 15%;
+    
+}
+
+
+
+
+
+
+
+
+/* Gallery container: Adjust vertical margin to reduce space */
+#gallery-container {
+    width: 100%;
+    height: 500px;
+    margin: 20px auto;  /* Reduced margin */
+    overflow: hidden;
+}
+
+/* Photo gallery layout */
 #photo-gallery {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    position: relative; /* For positioning buttons */
+    position: relative;
 }
 
+/* Image frame for gallery image */
 .image-frame {
-    width: 90%; /* Or a percentage you like */
-    height: 90%; /* Or a percentage you like */
-    max-width: 900px; /* Optional: max width for very large screens */
-    max-height: 500px; /* Optional: max height for very large screens */
+    width: 90%;
+    height: 90%;
+    max-width: 900px;
+    max-height: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* Contain the image within the frame */
+    overflow: hidden;
 }
 
+/* Gallery image styles */
 #gallery-img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* or 'cover' if you prefer cropping */
+    object-fit: contain;
     transition: opacity 0.3s ease-in-out;
 }
 
-/* ... (rest of the CSS for buttons remains the same) */
+/* Visually appealing button styles */
+#prev-btn, #next-btn {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.1);
+}
+
+#prev-btn:focus, #next-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.5);
+}
+
 
 
 
