@@ -98,25 +98,63 @@ header nav a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Optional: Add a background color on hover */
 }
 
-/* Responsive Navigation Bar */
-@media screen and (max-width: 768px) {
+/* Navigation links styling for larger screens */
+#nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  #nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  #nav-links a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Hide the menu icon by default */
+  .menu-icon {
+    display: none;
+  }
+  
+  /* Responsive styles for screens smaller than 768px */
+  @media screen and (max-width: 768px) {
+    /* Adjust header layout so that the hamburger icon aligns to the right */
     header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+      justify-content: flex-end;
     }
-    header nav {
-        flex-direction: column;
-        margin-right: 0;
+    /* Show the hamburger icon */
+    .menu-icon {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
     }
-    header nav a {
-        display: block;
-        margin: 5px 0;
-        padding: 8px 12px;
+    /* Hide navigation links by default */
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;         /* Adjust based on your header height */
+      right: 0;
+      background-color: #333;
+      width: 100%;       /* Alternatively, set a fixed width */
+      z-index: 1000;
     }
-}
-
-
+    /* When active, display the navigation links */
+    #nav-links.active {
+      display: flex;
+    }
+    #nav-links a {
+      display: block;
+      margin: 5px 0;
+      padding: 10px;
+      text-align: center;
+    }
+  }
 header img {
     border-radius: 100%; /* Make the image circular */
     width: 140px; /* Set the width of the image */
