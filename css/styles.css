@@ -154,25 +154,23 @@ header nav a:hover {
       display: none;
       flex-direction: column;
       position:fixed;
-      top: 42px; /* Adjust to match header height */
+      top: 40px; /* Adjust to match header height */
       right: 0;
       background-color: rgba(51, 51, 51, 0.8);
       color: white;;
-      width: 40%;
+      width: 20%;
       text-align: center;
-      padding-top: 60px;  /* Space for the header/hamburger icon */
+      align-items: center;
+      padding-top: 0px;  /* Space for the header/hamburger icon */
       z-index: 2000;   /* Make sure the overlay is above the header */
+      border-radius: 3%;
     }
     
     /* When active, display the navigation links */
     #nav-links.active {
       display:flex;
     }
-    
-    /* Style each link for vertical stacking */
-    #nav-links li {
-      margin: 10px 0;
-    }
+
   }
 
 
@@ -644,9 +642,9 @@ footer {
 
 #backToTop {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     right: 10px;
-    padding: 10px 15px;
+    padding: 5px 10px;
     background: #ff6347;
     color: white;
     border: none;
@@ -659,7 +657,9 @@ footer {
     background: #ff4500;
 }
 
-
+h10 {
+    font-size: .75rem;
+  }
 
 
 
