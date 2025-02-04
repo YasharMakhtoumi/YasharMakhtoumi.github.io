@@ -51,7 +51,7 @@ body.Contact {
 
 
 header {
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
     background:  rgba(51, 51, 51, 0.8);
