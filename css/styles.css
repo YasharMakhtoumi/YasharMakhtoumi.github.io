@@ -49,17 +49,6 @@ body.Contact {
     background-attachment: fixed; /* Fixed background image */
 }
 
-/* The wrapper that contains all your content and the footer */
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* The main content area should expand to fill the space */
-.main-content {
-    flex: 1;
-}
 
 header {
     position: fixed;
