@@ -116,45 +116,39 @@ header nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
   
-  /* Hide the menu icon by default */
-  .menu-icon {
-    display: none;
+/* Style for the menu icon */
+.menu-icon {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Hidden by default */
   }
   
-  /* Responsive styles for screens smaller than 768px */
-  @media screen and (max-width: 768px) {
-    /* Adjust header layout so that the hamburger icon aligns to the right */
-    header {
-      justify-content: flex-end;
-    }
-    /* Show the hamburger icon */
-    .menu-icon {
-      display: block;
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-    /* Hide navigation links by default */
-    #nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;         /* Adjust based on your header height */
-      right: 0;
-      background-color: #333;
-      width: 100%;       /* Alternatively, set a fixed width */
-      z-index: 1000;
-    }
-    /* When active, display the navigation links */
-    #nav-links.active {
-      display: flex;
-    }
-    #nav-links a {
-      display: block;
-      margin: 5px 0;
-      padding: 10px;
-      text-align: center;
-    }
+/* Responsive styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show the menu icon */
   }
+  #nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    background-color: #333;
+    width: 100%; /* Alternatively, set a fixed width */
+    z-index: 1000;
+  }
+  #nav-links.active {
+    display: flex; /* Show navigation links when active */
+  }
+}
+
+
+
+
 header img {
     border-radius: 100%; /* Make the image circular */
     width: 140px; /* Set the width of the image */
