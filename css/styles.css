@@ -104,6 +104,7 @@ header nav a:hover {
 
 
 /* Navigation links styling for larger screens */
+
 #nav-links {
     display: flex;
     gap: 15px;
@@ -137,27 +138,40 @@ header nav a:hover {
     display: none; /* Hidden by default */
   }
   
-/* Responsive styles for screens smaller than 768px */
+
+/* Responsive Styles for screens smaller than 768px */
 @media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Show the menu icon */
+    /* Show hamburger menu icon */
+    .menu-icon {
+      display: block;
+      position: absolute;
+      right: 20px;  /* Positioned at the top-right corner */
+      top: 0px;
+    }
+    
+    /* Hide navigation links by default */
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 0px; /* Adjust to match header height */
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+      padding: 0px 0;
+    }
+    
+    /* When active, display the navigation links */
+    #nav-links.active {
+      display: flex;
+    }
+    
+    /* Style each link for vertical stacking */
+    #nav-links li {
+      margin: 10px 0;
+    }
   }
-  #nav-links {
-    display: none; /* Hide navigation links by default */
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust based on your header height */
-    right: 0;
-    background-color: #333;
-    width: 100%; /* Alternatively, set a fixed width */
-    z-index: 1000;
-  }
-  #nav-links.active {
-    display: flex; /* Show navigation links when active */
-  }
-}
-
-
 
 
 
