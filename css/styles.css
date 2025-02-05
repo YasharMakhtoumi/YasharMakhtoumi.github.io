@@ -216,6 +216,7 @@ section {
     text-align: center;
     position: relative;
     min-height: auto; /* Adjust the height of each section */
+    
 }
 
 #sectionPub {
@@ -382,6 +383,7 @@ section {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;   /* Allow columns to wrap on small screens */
    
 }
 
@@ -389,13 +391,18 @@ section {
     flex: 1;
     max-width: 500px;
     padding: 20px;
-    background: #f8f8f8;
+    background: #a85252;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     
 }
 
-
+@media screen and (max-width: 600px) {
+    .teaching-column {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+  }
 
 
 .about-container {
@@ -407,6 +414,7 @@ section {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
+
 
 .profile-pic {
     width: 300px;
@@ -440,8 +448,8 @@ section {
 #about-section {
     display: flex;
     flex-direction: column;
-    width: 100vw;  /* Full viewport width */
-    margin: 0;
+    width: 100%;  /* Full viewport width */
+    margin: 0 0 0 0; /* No margin */
     padding: 100px 0 0 0; /* Adds space only at the top */
 }
 
@@ -456,7 +464,7 @@ section {
 /* Bottom Row: Two Columns Without Gaps */
 .about-bottom {
     display: flex;
-    width: 100vw;  /* Ensure full width */
+    width: 100%;  /*Ensure full width*/
     margin: 0;
     padding: 0;
 }
