@@ -106,3 +106,31 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all images inside .image-container
+    const images = document.querySelectorAll('.image-container img');
+  
+    images.forEach(image => {
+      image.addEventListener('click', function () {
+        // Create the overlay element
+        const overlay = document.createElement('div');
+        overlay.classList.add('lightbox-overlay');
+  
+        // Create a new image element for the overlay
+        const overlayImage = document.createElement('img');
+        overlayImage.src = this.src;
+        overlay.appendChild(overlayImage);
+  
+        // Append the overlay to the body
+        document.body.appendChild(overlay);
+  
+        // When the overlay is clicked, remove it
+        overlay.addEventListener('click', function () {
+          document.body.removeChild(overlay);
+        });
+      });
+    });
+  });
+
+  
+  

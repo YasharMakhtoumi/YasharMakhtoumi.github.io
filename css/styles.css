@@ -379,6 +379,41 @@ section {
 }
 
 
+/* Image styling */
+.image-container img {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Zoom-in effect on hover */
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+
+/* Lightbox overlay styles */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  .lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+
+
+
+
+
+
 .teaching-container {
     display: flex;
     gap: 20px;
@@ -502,7 +537,7 @@ section {
     width: 100%;           /* Use 100% instead of 100vw */
     max-width: 1000px;     /* Optional: Set a maximum width */
     margin: 100px auto 0 auto;  /* Center the section and add top space */
-    padding: 0 0 250px 0;
+    padding: 0 0 200px 0;
 }
 
 /* Top Row: Profile Section */
