@@ -391,7 +391,7 @@ section {
     flex: 1;
     max-width: 500px;
     padding: 20px;
-    background: #a85252;
+    background: #f4f4f4;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     
@@ -500,7 +500,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;           /* Use 100% instead of 100vw */
-    max-width: 1200px;     /* Optional: Set a maximum width */
+    max-width: 1000px;     /* Optional: Set a maximum width */
     margin: 100px auto 0 auto;  /* Center the section and add top space */
     padding: 0;
 }
