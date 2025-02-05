@@ -82,13 +82,13 @@ header nav {
     justify-content: center; /* Center the navigation links */
     align-items: center;
     
-    margin-right: 10%; /* Move the nav 30% from the right edge */
+    margin-right: 5%; /* Move the nav 30% from the right edge */
 }
 
 header nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 5px;
     padding: 10px 15px; /* Add padding to the links */
     border-radius: 5px; /* Optional: Add rounded corners */
 }
