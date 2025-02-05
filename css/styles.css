@@ -575,7 +575,7 @@ section {
 .content-right img { 
     width: 15%;
     height: 15%;
-    
+    transition: transform 0.3s ease;
 }
 
 .content-right img:hover {
