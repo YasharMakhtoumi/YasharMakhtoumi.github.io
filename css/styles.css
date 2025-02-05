@@ -502,7 +502,7 @@ section {
     width: 100%;           /* Use 100% instead of 100vw */
     max-width: 1000px;     /* Optional: Set a maximum width */
     margin: 100px auto 0 auto;  /* Center the section and add top space */
-    padding: 0;
+    padding: 0 0 250px 0;
 }
 
 /* Top Row: Profile Section */
@@ -517,7 +517,7 @@ section {
 .content-bottom {
     display: flex;
     width: 100%;           /* Use 100% for the container */
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
     text-align: center;
 }
@@ -543,7 +543,43 @@ section {
     
 }
 
-
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    /* Let the section use full width */
+    #content-section {
+        max-width: 100%; /* Full width on small screens */
+        margin: 50px 0 0 0;  /* Adjust top margin as needed */
+        padding: 10px;
+    }
+    
+    /* Ensure the top content spans full width */
+    .content-top {
+        width: 100%;
+    }
+    
+    /* Stack the bottom columns vertically */
+    .content-bottom {
+        flex-direction: column;
+    }
+    
+    /* Adjust padding for bottom columns */
+    .content-left, .content-right {
+        padding: 15px;
+    }
+    
+    /* Make images responsive */
+    .content-right img { 
+        width: 20%;  /* Let the image take full container width */
+        height: auto;
+    }
+    
+    /* Fix bullet list alignment */
+    ul {
+        list-style-position: inside;  /* Ensures bullet points are inside the content flow */
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
 
 
 
