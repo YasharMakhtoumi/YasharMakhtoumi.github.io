@@ -537,7 +537,7 @@ section {
     width: 100%;           /* Use 100% instead of 100vw */
     max-width: 1000px;     /* Optional: Set a maximum width */
     margin: 100px auto 0 auto;  /* Center the section and add top space */
-    padding: 0 0 200px 0;
+    padding: 0 0 100px 0;
 }
 
 /* Top Row: Profile Section */
@@ -577,6 +577,13 @@ section {
     height: 15%;
     
 }
+
+.content-right img:hover {
+    transform: scale(1.2);
+}
+
+
+
 
 /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
@@ -625,7 +632,7 @@ section {
 #gallery-container {
     width: 100%;
     height: 500px;
-    margin: 20px auto;  /* Reduced margin */
+    margin: 100px 0 200px 0;  /* Reduced margin */
     overflow: hidden;
 }
 
